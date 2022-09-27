@@ -3,9 +3,8 @@ public class PieceCirculaire extends Piece {
     private Double _rayon;
     private Double _pi = 3.14;
 
-    public PieceCirculaire(Double _rayon, Double _pi, TypePiece _typePiece, String _niveau) {
+    public PieceCirculaire(TypePiece _typePiece, String _niveau, Double _rayon) {
         super(_typePiece,_niveau);
-        this._rayon = _pi;
         this._rayon = _rayon;
     }
 

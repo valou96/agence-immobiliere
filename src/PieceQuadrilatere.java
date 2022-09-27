@@ -3,7 +3,7 @@ public class PieceQuadrilatere extends Piece {
     private Double _longueur;
     private Double _largeur;
 
-    public PieceQuadrilatere(Double _longueur, Double _largeur, TypePiece _typePiece, String _niveau) {
+    public PieceQuadrilatere(TypePiece _typePiece, String _niveau, Double _longueur, Double _largeur) {
         super(_typePiece,_niveau);
         this._longueur = _longueur;
         this._largeur = _largeur;
@@ -18,7 +18,7 @@ public class PieceQuadrilatere extends Piece {
     }
 
     @Override
-    public double surface(Double _longueur, Double _largeur){
+    public double surface(){
         double result;
         result = _longueur * _largeur;
         return result;
