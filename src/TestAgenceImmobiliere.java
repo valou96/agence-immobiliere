@@ -39,6 +39,21 @@ public class TestAgenceImmobiliere {
         PieceTriangulaire unTriangle = new PieceTriangulaire(cuisine, "1",6.2,2.2 );
         assertEquals(6.82, unTriangle.surface(),1e-2);
         }
+
+
+        @Test
+        public void testMethodSurfaceHabitable(){
+        TypePiece cuisine = new TypePiece(TypePiece.CUISINE, true, false);
+        PieceTriangulaire unTriangle = new PieceTriangulaire(cuisine, "1",6.2,2.2 );
+        assertEquals(6.82, unTriangle.surfaceHabitable(),1e-2);
+        }
+
+        @Test
+        public void testMethodSurfaceNonHabitable(){
+        TypePiece cuisine = new TypePiece(TypePiece.CUISINE, true, false);
+        PieceTriangulaire unTriangle = new PieceTriangulaire(cuisine, "1",6.2,2.2 );
+        assertEquals(6.82, unTriangle.surface(),1e-2);
+        }
         
 
 }

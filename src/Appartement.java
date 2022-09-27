@@ -19,13 +19,19 @@ public class Appartement extends BienImmobilier{
     }
 
     public String typeBien(){
-        String result = " T ";
-        boolean piece;
-        if(piece == true)
-            return result;;
+        int nbPiece = 0 ;
+        for(Piece _pieces : _pieces){
+            if(_pieces.get_typePiece().isPiece()){
+                nbPiece ++;
+            }
+        }
+        if (nbPiece > 7){
+            return "T7+";
+        }
 
-        return result;
+        return "T0";
     }
+
 
     @Override
     public String toString() {
